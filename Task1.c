@@ -7,7 +7,7 @@
 #include <inttypes.h>
 #include <stdio.h>
 
-//������� ������� ��������� �� ���� �������� ����� �����
+//Функция которая принимает на вход знаковое целое число
 void printDecIntBin(int32_t value)
 {
     char ans[33];
@@ -26,7 +26,7 @@ void printDecIntBin(int32_t value)
     printf("Signed value %ld in memory: %s\n", value, ans);
 }
 
-//������� ������� ��������� �� ���� uint32_t
+//Функция которая принимает на вход uint32_t
 void printDecUIntBin(uint32_t value)
 {
     char ans[33];
