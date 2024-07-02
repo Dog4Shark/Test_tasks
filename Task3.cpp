@@ -37,13 +37,16 @@ int main() {
         while (!(std::cin >> numSellers))
         {
             std::cin.clear();
-            std::cin.ignore((std::numeric_limits<std::streamsize>::max(), '\n'));
+            std::string clear;
+            getline(std::cin, clear);
             std::cout << "Please enter the correct number of sellers: ";
         }
 
         if (numSellers < 1)
         {
             std::cout << "Please enter only positive values!" << std::endl;
+            std::string clear;
+            getline(std::cin, clear);
             continue;
         }
 
@@ -57,8 +60,8 @@ int main() {
                 std::cout << "Please enter the correct number of sellers and pies: ";
                 i = 0;
                 std::cin.clear();
-                std::cin.ignore((std::numeric_limits<std::streamsize>::max(), '\n'));
-                
+                std::string clear;
+                getline(std::cin, clear);
             }
             if (pies[i] < 0)
             {
@@ -70,6 +73,8 @@ int main() {
         if (noPositiveValue)
         {
             std::cout << "Please enter only positive values" << std::endl;
+            std::string clear;
+            getline(std::cin, clear);
             continue;
         }
 
