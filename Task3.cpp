@@ -29,7 +29,7 @@ void calculate(std::vector<int>& pies)
 
 int main() {
 
-    while (true)
+ while (true)
     {
         int numSellers;
         std::cout << "Enter number of sellers and pies: ";
@@ -80,6 +80,7 @@ int main() {
             std::cout << sumPies << " ";
         }
         std::cout << std::endl;
+        std::cin.ignore((std::numeric_limits<std::streamsize>::max(), '\n'));
     }
    return 0;
 }
