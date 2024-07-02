@@ -80,7 +80,8 @@ int main() {
             std::cout << sumPies << " ";
         }
         std::cout << std::endl;
-        std::cin.ignore((std::numeric_limits<std::streamsize>::max(), '\n'));
+        std::string clear;
+        getline(std::cin, clear);
     }
    return 0;
 }
